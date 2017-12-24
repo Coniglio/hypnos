@@ -4,7 +4,7 @@ const vm = new Vue({
     sleeps: []
   },
   mounted() {
-	axios.get("http://tk2-208-13803.vs.sakura.ne.jp:3000/hypnos")
+	axios.get("http://localhost:3000/hypnos")
 	.then(response => {
 		this.sleeps = response.data
 	})
