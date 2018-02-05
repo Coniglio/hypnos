@@ -28,7 +28,7 @@ func main() {
         w.Header().Set("Access-Control-Allow-Origin", "*" )
         w.Header().Set("Access-Control-Allow-Methods","GET" )
 
-        db, _ := sql.Open("postgres", "user=postgres dbname=hypnos password=t90thbntH sslmode=disable")
+        db, _ := sql.Open("postgres", "user=postgres dbname=hypnos password=xxx sslmode=disable")
         defer db.Close()
 
         rows, _ := db.Query("select * from sleep;")
